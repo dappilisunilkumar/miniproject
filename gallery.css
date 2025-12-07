@@ -16,18 +16,20 @@ body{
     height: auto;
     padding: 0.9rem;
     background-attachment: fixed;
-    
-    animation: moveSky 50s linear infinite;
-}
+    #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
 
-@keyframes moveSky {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
 }
+ 
+    
+ }
+    
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -152,7 +154,7 @@ background-color: greenyellow;
     border-radius: 50%;
     font-family: Consolas;
     font-size: 2rem;
-    background-color: greenyellow;
+    background-color: lightblue;
     position: fixed;
     position-anchor: ---sunil;
     position-area: bottom center;
@@ -170,12 +172,77 @@ background-color: greenyellow;
     cursor: auto;
 }
 .foot{
-    height: 15vh;
+    height: 25vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
 }
+/* ------------------- Laptop / Desktop (1200px and below) ------------------- */
+@media screen and (max-width: 1200px) {
+    .brand {
+        font-size: 1.8rem;
+    }
+    .bar {
+        width: 70%;
+        font-size: 1.1rem;
+    }
+    .section {
+        width: 80vw;
+    }
+    .container {
+        height: auto;
+        padding: 2rem 0;
+    }
+}
+/* ------------------- Mobile Medium (600px and below) ------------------- */
+@media screen and (max-width: 600px) {
+    .brand {
+        font-size: 1.5rem;
+    }
+
+    .bar {
+        display: none;
 
 
+    .section {
+        width: 100%;
+        gap: 0.5rem;
+    }
 
+    .carousel img {
+        width: 180px;
+    }
+
+    .foot {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+/* ------------------- Mobile Small (480px and below) ------------------- */
+@media screen and (max-width: 480px) {
+    .navbar {
+        font-size: 0.9rem;
+    }
+
+    .brand {
+        font-size: 1.2rem;
+    }
+
+    .carousel img {
+        width: 150px;
+    }
+
+    .section {
+        gap: 0.3rem;
+    }
+
+    .foot {
+        font-size: 0.9rem;
+        /* padding-bottom: 1rem; */
+        flex-direction: column;
+    }
+}
+
+}

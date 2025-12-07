@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: white;
+    line-height: 1.5;
+    background-image: url("./tm-astro-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 0.9rem;
+    background-attachment: fixed;
+    #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+
+}
+ 
+    
+ }
+    
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.3rem;
+}
+.brand{
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 300;
+    color: white;  
+}
+.bar{
+    width:65% ;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    font-weight: 300;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: greenyellow;
+}
+.item{
+    color: greenyellow;
+}
+.cricle1 {
+    width:6vw; 
+    height: 0.2vh;
+    background-color: white;
+    
+}
+.cricle2{
+   width: 1.5vw;
+   height: 3vh;
+   border-radius: 50%;
+   background-color: white;
+}
+.cricle3{
+   width:6vw; 
+   height: 0.2vh;
+   background-color: white;
+}
+.cricle2:hover,.cricle1:hover,.cricle3:hover  {
+background-color: greenyellow;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bordersection{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: center;
+}
+.cricle4,.cricle5 {
+   width: 1.5vw;
+   height: 3vh;
+   border-radius: 50%;
+   background-color: white;
+}
+.bar1{
+   width:80vw; 
+   height: 0.1vh;
+   background-color: white;
+}
+.container{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+}
+
+.foot{
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.section1{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+    
+}
+.about{
+    /* border: 1px solid white; */
+    width: 30vw;
+    height: 50vh;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+.information{
+    /* border: 1px solid white; */
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: 300;
+
+}
+input{
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+input::placeholder{
+    color: white;
+    opacity: 0.7;
+    caret-color: white;   
+    
+}
+.message-box{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 28vw;
+    height: 15vh;
+    color: white;
+
+}
+.message-box::placeholder{
+    color: white;
+    opacity: 0.7;
+    caret-color: white;   
+    
+}
+.inputclass{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+p:hover{
+    color: greenyellow;
+}
+.btn{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 10vh; */
+
+}
+button{
+    width: 7vw;
+    height:6vh ;
+}
+
+
